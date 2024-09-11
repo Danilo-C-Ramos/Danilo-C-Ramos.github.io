@@ -1,0 +1,25 @@
+header,
+main,
+footer{
+    display: flex;
+    flex-direction: row;    
+}
+
+header{
+    background-color: black;
+    position: relative;
+    
+}   
+.cabecalho{ 
+    padding: 10px;
+}
+
+.info_perfil{
+    position: absolute;
+    right: 20px;   
+    bottom: 10px
+
+}
+body{ 
+    background-color: darkslategrey;
+}
