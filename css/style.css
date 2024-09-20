@@ -17,9 +17,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     flex-grow: 0;
+    width: 100%;
     border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
 
     /* Anatomia básica resumida */
 
@@ -27,9 +26,6 @@ header {
 .info_perfil{
     display: flex;
     justify-content: space-around;
-    padding-left: 50rem;
-    padding-right: 1rem;
-    
 }
 main{
     flex-grow: 1;
