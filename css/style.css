@@ -13,6 +13,9 @@ h2 {
 }
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     flex-grow: 0;
     border: 1px solid black;
     margin: 10px;
@@ -21,16 +24,27 @@ header {
     /* Anatomia básica resumida */
 
 }
+.info_perfil{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50rem;
+    padding-right: 1rem;
+    
+}
 main{
     flex-grow: 1;
     border: 1px solid blue;
     margin: 10px;
     padding: 10px;
+    position:relative;
 }
 footer{
     flex-grow: 0;
     border: 1px solid orange;
     margin: 10px;
     padding: 10px;
+}
+.bottom-nav{
+    position: fixed;
 }
  
