@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fisicando</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 
 </head>
 <body>
     <header>
-        <figure>
+        <figure class="logo">
             <img src = 'https://fakeimg.pl/24x24' alt = 'Logo'>
         </figure>
         
@@ -20,21 +20,28 @@
         </div>
     </header>
     <main>
-        <section>
-            <h2>Atividade Rápida</h2>
-            <a href='atividade.html'>Iniciar</a>
-        </section>
-        <section>
-            <h2>Desempenho</h2>
-            <img src = "https://fakeimg.pl/100x100" alt = 'Gráfico de desempenho'>
-        </section>
-        <section>
-            <h2>Teste diagnóstico</h2>
-            <nav><a href="diagnostico.html"><img src="img/diagnostico.png" alt = 'Teste diagnóstico'></a></nav>
-        </section>      
+        <ul class="coluna-principal">
+            <li class="atividade">
+                <a href='atividade.html'    >Nova atividade</a>
+            </li>
+        
+            <li class="grafico">
+                <img src = "https://fakeimg.pl/100x100" alt = 'Gráfico de desempenho'>
+            </li>
+
+            <li>
+                <ul class="linha diag">
+                    <li>
+                        <a href="diagnostico.html"><img src="img/diagnostico.png" alt = 'Teste diagnóstico'></a>
+                    </li>
+                    <li>
+                        <a href="materias.html"><img src="img/materias.png" alt = 'Teste diagnóstico'></a>
+                    </li>
+                </ul>  
+        </ul>    
     </main>
     <footer>
-        <nav class="bottom nav">
+        <nav class="bottom-nav">
             <a href="TND.html"><img src="img/profile.png" alt = 'Imagem de Perfil'></a>
             <a href="revisao.html"><img src="img/revisao.png" alt ='Imagem de revisão'></a>
             <a href="index.html"><img src="img/home.png" alt="Imagem de uma casa"></a>
