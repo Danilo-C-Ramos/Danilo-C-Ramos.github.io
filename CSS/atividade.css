@@ -32,7 +32,9 @@ main {
 a{
     text-decoration: none;
     color: white;
-}.log{
+}
+
+.log{
     padding: 0.3rem;
 }
 
