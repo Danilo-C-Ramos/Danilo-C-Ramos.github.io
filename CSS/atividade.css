@@ -1,0 +1,20 @@
+main { 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+
+.fotu {
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px; 
+}
+
+.quest {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.log{height: 15px;
+width: 20px;}

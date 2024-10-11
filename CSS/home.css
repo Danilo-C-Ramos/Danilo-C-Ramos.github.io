@@ -1,7 +1,12 @@
+body{
+    background-color: #1D5940;
+    font-family: 'Crimson Pro';
+}
+
 header{
     display: flex;
     position: relative;
-    background-color: black;
+    background-color: #A64F1A;
 }
 
 .info_perfil{
@@ -17,7 +22,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
@@ -25,37 +30,73 @@ main{
 .atividade{
     display: flex;
     flex-grow: 1;
-    
+    justify-content: center;
+    align-items: center;
     width: 80%;
-    background-color: black;
-}
-.grafico{
-    margin: 2rem;
-    display: flex;
-    flex-grow: 1;
-    width: 80%;
+    max-height: 30%;
     background-color: black;
 }
 
-.diag{
-    margin: 2rem;
+.pai-grafico{
     display: flex;
-    flex-grow: 1;
-    width: 80%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grafico{
+    margin: 2rem;
+    max-width: 80%;
+    max-height: 80%;
     background-color: black;
+}
+
+.linha_diagnostico{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.icones{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diag{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 8rem;
+    height: 5rem;
+    background-color: black;
+    
+}
+.icon_img{
+    width: 48px;
+    height: 48px;
 }
 
 footer{
     width: 100%;
     position: fixed;
     bottom: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-nav{
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: #A64F1A;
+    padding: 0.5rem 1rem; 
+    border-radius: 50px; 
+    width: 80%; 
+    height: 10%;
 }
 .linha{
     display: flex;
