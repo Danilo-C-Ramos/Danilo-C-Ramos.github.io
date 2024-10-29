@@ -1,0 +1,23 @@
+body{
+    background-color: #1D5940;
+     font-family: 'Crimson Pro';
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #A64F1A;
+    padding: 0.5rem 1rem; 
+    border-radius: 50px; 
+    width: 80%; 
+    height: 10%;
+}
