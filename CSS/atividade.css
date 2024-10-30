@@ -1,16 +1,17 @@
 body{
     background-color: #1D734F;
     font-family: 'Crimson Pro';
-    color: white
+    color: white;
+    height: 100vh;
+    border: 0.5rem solid #A64F1A;
 }
-
 main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    height: 95vh;
+    height: 80vh;
 }
 
 .fotu {

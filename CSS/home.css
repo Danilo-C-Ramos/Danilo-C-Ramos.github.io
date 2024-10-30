@@ -1,6 +1,5 @@
 body{
-    background-color: #1D734F;
-     font-family: 'Crimson Pro';
+    font-family: 'Crimson Pro';
 }
 
 header{
@@ -28,13 +27,13 @@ main{
 }
 
 .atividade{
+    background-color: #1D734F;
     display: flex;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
     width: 80%;
     max-height: 30%;
-    background-color: black;
     font-size: 2.5rem;
 }
 
@@ -49,7 +48,7 @@ main{
     margin: 2rem;
     max-width: 80%;
     max-height: 80%;
-    background-color: black;
+    background-color: #1D734F;
 }
 
 .linha_diagnostico{
@@ -73,8 +72,7 @@ main{
     align-items: center;
     width: 8rem;
     height: 5rem;
-    background-color: black;
-    
+    background-color: #1D734F;
 }
 .icon_img{
     width: 48px;
