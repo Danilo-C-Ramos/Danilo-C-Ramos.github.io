@@ -1,6 +1,7 @@
 body{
     background-color: #1D734F;
      font-family: 'Crimson Pro';
+     font-size: 1.4rem;
 }
 
 footer{
@@ -20,4 +21,17 @@ footer{
     border-radius: 50px; 
     width: 80%; 
     height: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
 }

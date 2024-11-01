@@ -3,7 +3,7 @@ body{
     font-family: 'Crimson Pro';
     color: white;
     height: 100vh;
-    border: 0.5rem solid #A64F1A;
+    /*border: 0.5rem solid #A64F1A;*/
 }
 main {
     display: flex;
