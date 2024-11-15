@@ -14,11 +14,13 @@
 </head>
 
 <body>
+  <div class="loading-spinner hidden"></div>
+  
   <img src = 'img/logo.png' alt = 'Logo' class="logo">
 
   <main class="sem-footer coluna center">
     <div class='titulo'><h1>FoTTon</h1></div>
-    <form action="index.html" class="coluna center">
+    <form id="myForm">
       <input class="cinza" type="text" id="Usuario" name="Usuario" required placeholder="Usuário">
       <input class="cinza" type="password" name="Senha" required placeholder="Senha">
       <input class="botao-confirmar azul" type="submit" value="Login">
@@ -26,10 +28,7 @@
     <img src="img/bem-vindo.png" alt="foto bem vindo do personagem PI" class="foto">
   </main>
 
-  <div class="loading-spinner" class="hidden"></div>
-  <div id="loading-overlay" class="hidden">
-    <div class="loading-spinner"></div>
-  </div>
+  
   
   
 </body>
