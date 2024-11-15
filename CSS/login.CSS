@@ -5,7 +5,7 @@ main{
     justify-content: space-around;
     position: absolute;
     top: 20%;
-    font-family: crimson-pro;
+    font-family: 'crimson-pro';
 }
 body{
     background-color: #A64F1A;

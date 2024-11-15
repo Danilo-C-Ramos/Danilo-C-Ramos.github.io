@@ -1,5 +1,4 @@
 body{
-    background-color: #1D734F;
     font-family: 'Crimson Pro';
     color: white;
     height: 100vh;
@@ -13,14 +12,16 @@ main {
     padding: 20px;
     height: 80vh;
 }
-
-.fotu {
+.fotu{
     display: flex;
     justify-content: center;
     height: 40%;
     width: 40%;
+    border-radius: 20rem;
 }
-
+.foto_img{
+    border-radius: 1.2rem;
+}
 .quest {
     font-size: 1.2rem;
 }
@@ -32,11 +33,25 @@ main {
 }
 a{
     text-decoration: none;
-    color: white;
 }
-
 .log{
     padding: 0.3rem;
+}
+.fundo{
+    background-color: #1D734F;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+.explicacao{
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    position: fixed;
+    top: 70%;
+}
+.continuar{
+background-color: #A64F1A;
 }
 
 

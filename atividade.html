@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/atividade.css">
     <link href="https://fonts.google.com/specimen/Crimson+Pro" rel="stylesheet">
+    <script src="js/atividade.js"></script>
 </head>
 <body>
     <header>
         <a href='index.html'><img src="img/voltar.png" class="log" alt=""></a>
     </header>
     <main>
-        <div class="fotu"><img src="img/pergunta.jpeg" alt="Homem em duvida"></div>
-        
-        <h1 class="quest">
+        <div class="fotu"><img src="img/pergunta.jpeg" alt="Homem em duvida" class="foto_img"></div>
+        <div class="fundo"> <h1 class="quest">
             Qual lei de Newton está relacionada a famosa história da maçã?
-        </h1>
+        </h1></div>
+
         <ol class="quest opcoes">
-            <li><button>A)</button>Primeira, a lei da inércia</li>
-            <li><button>B)</button>Segunda, a lei da inércia</li>
-            <li><button>C)</button>Terceira, a lei de ação e reação</li>
-            <li><button>D)</button>Primeira, a lei da ação e reação</li>
+            <li class="fundo"><button>A)</button>Primeira, a lei da inércia</li>
+            <li class="fundo"><button>B)</button>Segunda, a lei da inércia</li>
+            <li class="fundo"><button>C)</button>Terceira, a lei de ação e reação</li>
+            <li class="fundo"><button>D)</button>Primeira, a lei da ação e reação</li>
         </ol>
-        <a href="fim.html">Continuar</a>
     </main>
+    <div class="explicacao">
+        <ol>
+            <li>explicacao de certo ou errado</li>
+            <li class="continuar"><a href="fim.html">Continuar</a></li>
+        </ol>
+        
+    </div>
 </body>
 </html>
