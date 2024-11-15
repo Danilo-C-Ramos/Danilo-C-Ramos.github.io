@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-   const overlay = document.querySelector(".loading-spinner");
+    const circulo = document.querySelector(".loading-spinner");
+    const overlay = document.querySelector(".loading-overlay");
 
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault();
@@ -14,12 +15,14 @@ document.querySelector("form").addEventListener("submit", function (event) {
     console.log(password)
 
     overlay.classList.remove("hidden");
-
+    circulo.classList.remove("hidden");
+    
     // Simula carregamento por 3 segundos
     setTimeout(() => {
-    overlay.classList.add("hidden"); // Esconde o overlay após "carregamento"
+    circulo.classList.add("hidden");
+    circulo.classList.add("hidden");
     window.location.href = "index.html";
-    }, 3000);
+    }, 2000);
 });
 })
 
