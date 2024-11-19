@@ -1,56 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fisicando</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link href="https://fonts.google.com/specimen/Crimson+Pro" rel="stylesheet">
-    <script src="js/home.js"></script>
-</head>
-<body>
-    <header>
-        <figure>
-            <img src = 'img/logo.png' alt = 'Logo' class="logo">
-        </figure>
-        <div class = 'info_perfil'>
-            <img src = 'img/fogo.png' alt = 'Foguinho de sequência'>
-            <img src = 'img/barra-xp.png' alt = 'Barra de nível'>
-        </div>
-    </header>
-    <main>
-        <ul class="coluna-principal">
-            <li class="atividade botao">
-                <a href='atividade.html'>Nova atividade</a>
-            </li>
-        
-            <li class="pai-grafico botao">
-                <img src = "img/grafico.jpg" alt = 'Gráfico de desempenho' class="grafico">
-            </li>
 
-            <li class="linha_diagnostico">
-                <ul class="icones">
-                    <li class="diag botao">
-                        <a><img src="img/diagnostico.png" alt = 'Teste diagnóstico' class="icon_img"></a>
-                        <a href="diagnostico.html">Teste diagnóstico</a>
-                    </li>
-                    <li class="diag botao">
-                        <a><img src="img/materias.png" alt = 'Teste diagnóstico' class="icon_img"></a>
-                        <a href="materias.html">Matérias</a>
-                    </li>
-                </ul>  
-            </li>
-        </ul> 
-    </main>
-    <footer>
-        <nav class="bottom-nav">
-            <a href="TND.html"><img src="img/profile.png" alt = 'Imagem de Perfil'></a>
-            <a href="revisao.html"><img src="img/revisao.png" alt ='Imagem de revisão'></a>
-            <a href="index.html"><img src="img/home.png" alt="Imagem de uma casa"></a>
-            <a href="materias.html"><img src="img/materias.png" alt="Livros empilhados"></a>
-            <a href="TND.html"><img src="img/config.png" alt="Engrenagem de configuração"></a>
-        </nav>
-    </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/login.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="loading-overlay hidden"></div>
+  <div class="loading-spinner hidden"></div>
+
+  
+  <img src = 'img/logo.png' alt = 'Logo' class="logo">
+
+  <main class="sem-footer coluna center">
+    <div class='titulo'><h1>FoTTon</h1></div>
+    <form id="myForm">
+      <input class="cinza" type="text" id="Usuario" name="Usuario" required placeholder="Usuário">
+      <input class="cinza" type="password" name="Senha" required placeholder="Senha">
+      <input class="botao-confirmar azul" type="submit" value="Login">
+    </form>
+    <img src="img/bem-vindo.png" alt="foto bem vindo do personagem PI" class="foto">
+  </main>
+
+  
+  
+  
 </body>
+
 </html>
