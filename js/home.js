@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     nova_atividade = botoes[0]
 
     nova_atividade.addEventListener('click', function(event) {
-        window.location.href = "atividade.html";
+        window.location.href = "atividade1.html";
     })
 
     grafico = botoes[1]

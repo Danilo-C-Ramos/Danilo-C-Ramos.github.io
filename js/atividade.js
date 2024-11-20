@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     alt_D = alternativas[3]
 
     alt_D.addEventListener('click', function(event) {
-        window.location.href = "atividade.html";
+        
     })
 
 
