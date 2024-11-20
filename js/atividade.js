@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     alt_D = alternativas[3]
 
     alt_D.addEventListener('click', function(event) {
-        
+        alt_D.style.backgroundColor = '#1D734F'
     })
 
 
