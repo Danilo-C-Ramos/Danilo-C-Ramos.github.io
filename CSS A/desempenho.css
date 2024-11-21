@@ -1,0 +1,50 @@
+body{
+    background-color: #1D734F;
+    font-family: 'Crimson Pro';
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    margin: 2rem;
+}
+
+main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grafico{
+    margin: 3rem;
+    width: 200px;
+    height: 200px;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #A64F1A;
+    padding: 0.5rem 1rem; 
+    border-radius: 50px; 
+    width: 80%; 
+    height: 10%;
+}

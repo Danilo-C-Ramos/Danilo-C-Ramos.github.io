@@ -1,0 +1,41 @@
+body{
+    background-color: #1D734F;
+    font-family: 'Crimson Pro';
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+h2{
+    margin: 1rem;
+    font-size: 2rem;
+}
+.xp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.barra-xp{
+    margin-right: 15%;
+}
+.img-barra{
+    width: 3rem;
+    height: 1rem;
+}
+.log{
+    padding: 0.3rem;
+}
+
