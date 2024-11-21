@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (numeroAtual) {
         const numero = parseInt(numeroAtual[0], 10); // Converte o número extraído em inteiro
-        if (numero >= 2) {
-            novoLink = 'fim.html'; // Se o número for maior ou igual a 2, vai para "fim.html"
+        if (numero >= 3) {
+            novoLink = 'desempenho.html'; // Se o número for maior ou igual a 2, vai para "fim.html"
         } else {
             const proximoNumero = numero + 1; // Caso contrário, incrementa o número
-            novoLink = `atividade${proximoNumero}.html`;
+            novoLink = `a_diag${proximoNumero}.html`;
         }
     } else {
-        novoLink = 'fim.html'; // Caso não encontre o número, define como 'fim.html'
+        novoLink = 'desempenho.html'; // Caso não encontre o número, define como 'fim.html'
     }
 
     const alternativas = document.querySelectorAll('li');
