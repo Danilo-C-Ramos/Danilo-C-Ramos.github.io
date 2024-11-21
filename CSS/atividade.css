@@ -1,6 +1,6 @@
 body{ 
     font-family: 'Crimson Pro';
-    color: white;
+    color: black;
     height: 100vh;
     /*border: 0.5rem solid #A64F1A;*/
 }
@@ -24,6 +24,7 @@ main {
 }
 .quest {
     font-size: 1.2rem;
+    background-color: #1D734F;
 }
 .opcoes{
     width:  100%;
@@ -38,7 +39,7 @@ a{
     padding: 0.3rem;
 }
 .fundo{
-    border-color: #A64F1A;
+    border: 0.1rem solid #A64F1A;
     border-radius: 1rem;
     margin: 0.5rem;
     padding: 0.5rem;
