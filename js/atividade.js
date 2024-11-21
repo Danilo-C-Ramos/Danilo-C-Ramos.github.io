@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Passo 1: Pega o nome do arquivo da página atual
+
     const nomeArquivo = window.location.pathname.split('/').pop(); // Exemplo: "atividade123.html"
     console.log(nomeArquivo)
     
-    // Passo 2: Usa uma expressão regular para pegar o número antes de ".html"
     const numeroAtual = nomeArquivo.match(/(\d+)(?=\.html$)/);
 
     if (numeroAtual) {
