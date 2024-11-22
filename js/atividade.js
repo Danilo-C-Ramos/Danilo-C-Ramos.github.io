@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     const nomeArquivo = window.location.pathname.split('/').pop(); // Exemplo: "atividade123.html"
     console.log(nomeArquivo)
     
@@ -46,9 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
             alternativas.forEach(function (alt) {
                 alt.style.pointerEvents = 'none'; // Bloqueia todos os cliques
             });
-
-        });
-        
+        });   
     }
-
 });

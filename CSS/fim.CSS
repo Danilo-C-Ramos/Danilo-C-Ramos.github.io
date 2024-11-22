@@ -1,11 +1,10 @@
 body{
-    background-color: #1D734F;
     font-family: 'Crimson Pro';
     color: white;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .foto{
     display: flex;
