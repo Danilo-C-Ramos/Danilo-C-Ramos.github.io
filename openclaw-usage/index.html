@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OpenClaw Usage Monitor</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1020;--card:#151b2f;--muted:#94a3b8;--text:#e5e7eb;--accent:#f97316;--bad:#fb7185;--warn:#fbbf24;--ok:#34d399;--line:#26324d}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top,#18213b,#0b1020 55%);color:var(--text)}
+    main{max-width:1100px;margin:0 auto;padding:28px 18px 60px}.hero{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:18px}.kicker{color:var(--accent);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:12px}h1{margin:.2rem 0;font-size:clamp(28px,5vw,46px)}.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}@media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{display:block}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 12px 34px rgba(0,0,0,.22)}.metric{font-size:28px;font-weight:800}.label{font-size:13px;color:var(--muted)}
+    table{width:100%;border-collapse:collapse;margin-top:8px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);font-size:14px}th{color:var(--muted);font-weight:600}.pill{display:inline-block;border-radius:999px;padding:3px 8px;font-size:12px;background:#26324d}.warn{color:var(--warn)}.bad{color:var(--bad)}.ok{color:var(--ok)}
+    #login{min-height:100vh;display:grid;place-items:center;padding:20px}.login-card{max-width:430px;width:100%}input,button{width:100%;border:1px solid var(--line);background:#0f172a;color:var(--text);border-radius:12px;padding:13px 14px;font-size:16px}button{margin-top:10px;background:var(--accent);border:0;color:#111827;font-weight:800;cursor:pointer}.err{min-height:22px;color:var(--bad);font-size:14px}.hidden{display:none!important}.bar{height:10px;background:#0f172a;border-radius:999px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,var(--accent),#facc15);width:0}
+  </style>
+</head>
+<body>
+  <section id="login">
+    <div class="card login-card">
+      <div class="kicker">Kobe / OpenClaw</div>
+      <h1>Usage Monitor</h1>
+      <p class="muted">Dashboard público com barreira simples de senha. Dados publicados são agregados e sanitizados.</p>
+      <input id="password" type="password" placeholder="Senha" autocomplete="current-password" />
+      <button id="unlock">Entrar</button>
+      <p id="err" class="err"></p>
+    </div>
+  </section>
+  <main id="app" class="hidden">
+    <div class="hero">
+      <div><div class="kicker">OpenClaw Usage Monitor</div><h1>Custos, uso e anomalias</h1><p class="muted" id="generated">Carregando…</p></div>
+      <div class="card"><div class="label">Status</div><div id="status" class="metric">—</div></div>
+    </div>
+    <section class="grid" id="metrics"></section>
+    <section class="card" style="margin-top:14px"><h2>Uso por agente</h2><table id="agents"></table></section>
+    <section class="card" style="margin-top:14px"><h2>Uso por modelo</h2><table id="models"></table></section>
+    <section class="card" style="margin-top:14px"><h2>Crons</h2><div id="cron"></div></section>
+    <section class="card" style="margin-top:14px"><h2>Alertas</h2><div id="alerts"></div></section>
+  </main>
+<script>
+const PASSWORD_HASH='f521ec1e930a2976da72f8980b1ce347164fa5079293afdfbeee82524bc5a33e';
+async function sha256(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function unlock(){const p=document.getElementById('password').value; if(await sha256(p)===PASSWORD_HASH){sessionStorage.setItem('ok','1');show()}else document.getElementById('err').textContent='Senha incorreta.'}
+document.getElementById('unlock').onclick=unlock;document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+function fmt(n){n=Number(n||0);return n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(1)+'k':String(Math.round(n))}
+function money(n){return '$'+Number(n||0).toFixed(4)}
+function table(el, rows, cols){el.innerHTML='<tr>'+cols.map(c=>'<th>'+c[0]+'</th>').join('')+'</tr>'+rows.map(r=>'<tr>'+cols.map(c=>'<td>'+c[1](r)+'</td>').join('')+'</tr>').join('')}
+async function show(){document.getElementById('login').classList.add('hidden');document.getElementById('app').classList.remove('hidden');const s=await fetch('data/public-summary.json?'+Date.now()).then(r=>r.json());document.getElementById('generated').textContent='Gerado em '+s.generated_at;const att=s.attention||[];document.getElementById('status').innerHTML=att.length?'<span class="warn">Atenção</span>':'<span class="ok">OK</span>';const t=s.totals||{};document.getElementById('metrics').innerHTML=[['Eventos',fmt(t.events)],['Tokens',fmt(t.total_tokens)],['Cache read',fmt(t.cache_read_tokens)],['Custo estimado',money(t.cost_usd)],['Fallback',fmt(t.fallback)],['Rate limit',fmt(t.rate_limit)],['Auth errors',fmt(t.auth_error)],['Timeouts',fmt(t.timeout)]].map(x=>`<div class="card"><div class="label">${x[0]}</div><div class="metric">${x[1]}</div></div>`).join('');
+ table(document.getElementById('agents'),Object.entries(s.by_agent||{}).map(([k,v])=>({name:k,...v})).sort((a,b)=>(b.total_tokens||0)-(a.total_tokens||0)),[['Agente',r=>`<span class="pill">${r.name}</span>`],['Eventos',r=>fmt(r.events)],['Tokens',r=>fmt(r.total_tokens)],['Fallback',r=>fmt(r.fallback)],['Rate limit',r=>fmt(r.rate_limit)],['Timeout',r=>fmt(r.timeout)]]);
+ table(document.getElementById('models'),Object.entries(s.by_model||{}).map(([k,v])=>({name:k,...v})).sort((a,b)=>(b.total_tokens||0)-(a.total_tokens||0)).slice(0,20),[['Modelo',r=>`<code>${r.name}</code>`],['Eventos',r=>fmt(r.events)],['Tokens',r=>fmt(r.total_tokens)],['Fallback',r=>fmt(r.fallback)],['Rate limit',r=>fmt(r.rate_limit)]]);
+ const c=s.cron||{};document.getElementById('cron').innerHTML=`<p><b>${c.enabled_jobs||0}</b> crons ativos de <b>${c.total_jobs||0}</b>.</p><h3>Por modelo</h3>`+Object.entries(c.enabled_by_model||{}).map(([k,v])=>`<p><code>${k}</code>: ${v}</p>`).join('');
+ document.getElementById('alerts').innerHTML=att.length?att.map(a=>`<p><span class="warn">${a.severity||'info'}</span> <code>${a.kind}</code>: ${a.count||a.model||''}</p>`).join(''):'<p class="ok">Nenhuma anomalia nos thresholds atuais.</p>'}
+if(sessionStorage.getItem('ok')==='1')show();
+</script>
+</body>
+</html>
