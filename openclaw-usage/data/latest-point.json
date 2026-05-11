@@ -1,0 +1,22 @@
+{
+  "errors": {
+    "auth": 3,
+    "fallback": 24,
+    "rate_limit": 10,
+    "timeout": 47
+  },
+  "totals": {
+    "auth_error": 11,
+    "cache_read_tokens": 126706306.11474702,
+    "cache_write_tokens": 0.0,
+    "cost_usd": 0,
+    "events": 3330,
+    "fallback": 36,
+    "input_tokens": 18119701.46407268,
+    "output_tokens": 815496.1709049525,
+    "rate_limit": 10,
+    "timeout": 49,
+    "total_tokens": 10009053.749724213
+  },
+  "ts": "2026-05-11T23:03:19+00:00"
+}
