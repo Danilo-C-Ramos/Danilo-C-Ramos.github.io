@@ -2,65 +2,210 @@
   "attention": [
     {
       "agent": "main",
+      "job": "Lio Arqueologia — Tradeoff 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Cliente 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Anti-cultura 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Ambição 2",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Pessoas 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Produto 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Tradeoff 2",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Personalidade founder 2",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Raiva fundadora 2",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Cliente 2",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Excelência 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Anti-cultura 2",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Admiração 2",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Decisão difícil 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Ritmo 1",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — BHAG teste",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Síntese bruta",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
+      "job": "Lio Arqueologia — Revisão final",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "agent": "main",
       "job": "Lio Agent Team — start semanal operacional",
       "kind": "large_model_cron",
       "model": "openai-codex/gpt-5.5",
       "severity": "warn"
+    },
+    {
+      "count": 4,
+      "kind": "auth_errors_24h",
+      "severity": "warn"
+    },
+    {
+      "count": 22,
+      "kind": "timeout_volume_24h",
+      "severity": "warn"
     }
   ],
   "by_agent": {
-    "main": {
+    "atlas": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 28,
+      "events": 16,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 0
+      "timeout": 1,
+      "total_tokens": 152146.46989
+    },
+    "main": {
+      "auth_error": 4,
+      "cost_usd": 0,
+      "events": 408,
+      "fallback": 2,
+      "rate_limit": 0,
+      "timeout": 16,
+      "total_tokens": 303876.73833578
     },
     "mimo": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 8,
+      "events": 56,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 0
+      "timeout": 1,
+      "total_tokens": 774834.68727834
     },
     "phil": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 1,
+      "events": 13,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 0
+      "timeout": 1,
+      "total_tokens": 160999.04119839997
     },
     "sonny": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 1,
+      "events": 20,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 0
+      "timeout": 1,
+      "total_tokens": 280790.28660119994
     },
     "stephen": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 1,
+      "events": 20,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 0
+      "timeout": 1,
+      "total_tokens": 124398.87398717001
     },
     "unknown": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 12,
+      "events": 14,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 0,
+      "timeout": 1,
       "total_tokens": 0
     }
   },
@@ -68,22 +213,58 @@
     "cron": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 51,
+      "events": 119,
+      "fallback": 0,
+      "rate_limit": 0,
+      "timeout": 3,
+      "total_tokens": 1203182.09253521
+    },
+    "manual_or_unknown": {
+      "auth_error": 4,
+      "cost_usd": 0,
+      "events": 422,
+      "fallback": 2,
+      "rate_limit": 0,
+      "timeout": 19,
+      "total_tokens": 441717.76981067983
+    },
+    "subagent": {
+      "auth_error": 0,
+      "cost_usd": 0,
+      "events": 6,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
-      "total_tokens": 0
+      "total_tokens": 152146.234945
     }
   },
   "by_model": {
-    "(runtime-default)": {
+    "gpt-5.4": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 20,
+      "events": 5,
+      "fallback": 0,
+      "rate_limit": 0,
+      "timeout": 1,
+      "total_tokens": 0
+    },
+    "gpt-5.4-mini": {
+      "auth_error": 0,
+      "cost_usd": 0,
+      "events": 61,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
-      "total_tokens": 0
+      "total_tokens": 505453.2638269299
+    },
+    "gpt-5.5": {
+      "auth_error": 0,
+      "cost_usd": 0,
+      "events": 84,
+      "fallback": 0,
+      "rate_limit": 0,
+      "timeout": 0,
+      "total_tokens": 603718.2339125698
     },
     "gpt-mini": {
       "auth_error": 0,
@@ -93,6 +274,24 @@
       "rate_limit": 0,
       "timeout": 0,
       "total_tokens": 0
+    },
+    "minimax/minimax-m2.5": {
+      "auth_error": 0,
+      "cost_usd": 0,
+      "events": 40,
+      "fallback": 0,
+      "rate_limit": 0,
+      "timeout": 2,
+      "total_tokens": 633282.8929634601
+    },
+    "minimax/minimax-m2.5:free": {
+      "auth_error": 4,
+      "cost_usd": 0,
+      "events": 297,
+      "fallback": 1,
+      "rate_limit": 0,
+      "timeout": 13,
+      "total_tokens": 54591.706587930006
     },
     "openai-codex/gpt-5.4-mini": {
       "auth_error": 0,
@@ -106,7 +305,7 @@
     "openai-codex/gpt-5.5": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 4,
+      "events": 24,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
@@ -120,10 +319,145 @@
       "rate_limit": 0,
       "timeout": 0,
       "total_tokens": 0
+    },
+    "unknown": {
+      "auth_error": 0,
+      "cost_usd": 0,
+      "events": 9,
+      "fallback": 1,
+      "rate_limit": 0,
+      "timeout": 6,
+      "total_tokens": 0
     }
   },
   "cron": {
     "attention": [
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Tradeoff 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Cliente 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Anti-cultura 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Ambição 2",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Pessoas 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Produto 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Tradeoff 2",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Personalidade founder 2",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Raiva fundadora 2",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Cliente 2",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Excelência 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Anti-cultura 2",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Admiração 2",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Decisão difícil 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Ritmo 1",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — BHAG teste",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Síntese bruta",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Lio Arqueologia — Revisão final",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
+      },
       {
         "agent": "main",
         "job": "Lio Agent Team — start semanal operacional",
@@ -141,17 +475,20 @@
       "unknown": 11
     },
     "enabled_by_model": {
-      "(runtime-default)": 18,
       "gpt-mini": 8,
       "openai-codex/gpt-5.4-mini": 16,
-      "openai-codex/gpt-5.5": 4,
+      "openai-codex/gpt-5.5": 22,
       "openrouter/minimax/minimax-m2.5": 2
     },
     "enabled_jobs": 48,
     "total_jobs": 51
   },
-  "errors": {},
-  "generated_at": "2026-05-12T23:01:58+00:00",
+  "errors": {
+    "auth": 4,
+    "fallback": 2,
+    "timeout": 22
+  },
+  "generated_at": "2026-05-12T23:14:58+00:00",
   "history": {
     "daily": [
       {
@@ -188,7 +525,7 @@
         "auth_error": 2.0,
         "cache_read_tokens": 19575302.004915,
         "date": "2026-05-01",
-        "events": 1312,
+        "events": 1313,
         "fallback": 142.0,
         "input_tokens": 4524773.67115,
         "output_tokens": 253775.975413,
@@ -302,7 +639,7 @@
         "auth_error": 427.0,
         "cache_read_tokens": 187540167.767343,
         "date": "2026-05-11",
-        "events": 5853,
+        "events": 5854,
         "fallback": 403.0,
         "input_tokens": 25134754.054931,
         "output_tokens": 1138496.304003,
@@ -311,44 +648,44 @@
         "total_tokens": 13596843.670276
       },
       {
-        "auth_error": 2.0,
-        "cache_read_tokens": 24117222.039241,
+        "auth_error": 4.0,
+        "cache_read_tokens": 28932327.58129,
         "date": "2026-05-12",
-        "events": 446,
-        "fallback": 2.0,
-        "input_tokens": 3841179.018737,
-        "output_tokens": 119865.553429,
+        "events": 504,
+        "fallback": 3.0,
+        "input_tokens": 4271536.6933,
+        "output_tokens": 132278.81202,
         "timeout": 20.0,
-        "total_tokens": 1178791.611407
+        "total_tokens": 1233366.08661
       }
     ],
     "last_30d": {
-      "auth_error": 2689.0,
-      "cache_read_tokens": 649336641.652614,
-      "events": 47349,
-      "fallback": 4613.0,
-      "input_tokens": 133361471.233622,
-      "output_tokens": 5779820.579614,
+      "auth_error": 2691.0,
+      "cache_read_tokens": 654151747.194663,
+      "events": 47409,
+      "fallback": 4614.0,
+      "input_tokens": 133791828.908185,
+      "output_tokens": 5792233.838204,
       "rate_limit": 4817.0,
       "timeout": 4808.0,
-      "total_tokens": 176830981.009848
+      "total_tokens": 176885555.48505
     },
     "last_7d": {
-      "auth_error": 2580.0,
-      "cache_read_tokens": 279955640.497311,
-      "events": 30881,
-      "fallback": 2994.0,
-      "input_tokens": 61961922.148895,
-      "output_tokens": 2421984.162974,
+      "auth_error": 2582.0,
+      "cache_read_tokens": 284770746.039359,
+      "events": 30940,
+      "fallback": 2995.0,
+      "input_tokens": 62392279.823459,
+      "output_tokens": 2434397.421565,
       "rate_limit": 3328.0,
       "timeout": 3138.0,
-      "total_tokens": 70047175.353179
+      "total_tokens": 70101749.828382
     },
     "metric": "total_tokens",
     "prior_7d": {
       "auth_error": 109.0,
       "cache_read_tokens": 369381001.155304,
-      "events": 16466,
+      "events": 16467,
       "fallback": 1618.0,
       "input_tokens": 71399549.084726,
       "output_tokens": 3357836.416639,
@@ -360,7 +697,7 @@
       {
         "auth_error": 24.0,
         "cache_read_tokens": 129148466.415029,
-        "events": 5099,
+        "events": 5100,
         "fallback": 422.0,
         "input_tokens": 18799749.607937,
         "output_tokens": 1069545.755993,
@@ -382,15 +719,15 @@
         "week_start": "2026-05-03"
       },
       {
-        "auth_error": 1420.0,
-        "cache_read_tokens": 211657389.806584,
-        "events": 11439,
-        "fallback": 912.0,
-        "input_tokens": 29037333.073667,
-        "output_tokens": 1258753.857432,
+        "auth_error": 1422.0,
+        "cache_read_tokens": 216472495.348633,
+        "events": 11498,
+        "fallback": 913.0,
+        "input_tokens": 29467690.748231,
+        "output_tokens": 1271167.116023,
         "rate_limit": 825.0,
         "timeout": 1052.0,
-        "total_tokens": 14837035.281683,
+        "total_tokens": 14891609.756885,
         "week_start": "2026-05-10"
       }
     ]
@@ -407,16 +744,16 @@
   },
   "privacy_note": "Dados agregados e sanitizados: sem prompts, mensagens, chat names, paths sensíveis ou secrets.",
   "totals": {
-    "auth_error": 0,
-    "cache_read_tokens": 0,
-    "cache_write_tokens": 0,
+    "auth_error": 4,
+    "cache_read_tokens": 23722375.780867837,
+    "cache_write_tokens": 0.0,
     "cost_usd": 0,
-    "events": 51,
-    "fallback": 0,
-    "input_tokens": 0,
-    "output_tokens": 0,
+    "events": 547,
+    "fallback": 2,
+    "input_tokens": 5308550.223228599,
+    "output_tokens": 169012.09319444993,
     "rate_limit": 0,
-    "timeout": 0,
-    "total_tokens": 0
+    "timeout": 22,
+    "total_tokens": 1797046.0972908898
   }
 }
