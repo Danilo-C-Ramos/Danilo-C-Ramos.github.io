@@ -1,243 +1,103 @@
 {
   "attention": [
     {
-      "agent": "mimo",
+      "agent": "main",
+      "job": "Lio Agent Team — start semanal operacional",
       "kind": "large_model_cron",
       "model": "openai-codex/gpt-5.5",
-      "severity": "warn"
-    },
-    {
-      "agent": "mimo",
-      "kind": "large_model_cron",
-      "model": "openai-codex/gpt-5.5",
-      "severity": "warn"
-    },
-    {
-      "agent": "mimo",
-      "kind": "large_model_cron",
-      "model": "openai-codex/gpt-5.5",
-      "severity": "warn"
-    },
-    {
-      "agent": "mimo",
-      "kind": "large_model_cron",
-      "model": "openai-codex/gpt-5.5",
-      "severity": "warn"
-    },
-    {
-      "agent": "mimo",
-      "kind": "large_model_cron",
-      "model": "openai-codex/gpt-5.5",
-      "severity": "warn"
-    },
-    {
-      "agent": "mimo",
-      "kind": "large_model_cron",
-      "model": "openai-codex/gpt-5.5",
-      "severity": "warn"
-    },
-    {
-      "agent": "mimo",
-      "kind": "large_model_cron",
-      "model": "openai-codex/gpt-5.5",
-      "severity": "warn"
-    },
-    {
-      "count": 10,
-      "kind": "rate_limit_volume_24h",
-      "severity": "warn"
-    },
-    {
-      "count": 11,
-      "kind": "auth_errors_24h",
-      "severity": "warn"
-    },
-    {
-      "count": 49,
-      "kind": "timeout_volume_24h",
       "severity": "warn"
     }
   ],
   "by_agent": {
-    "atlas": {
+    "main": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 263,
+      "events": 28,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 2,
-      "total_tokens": 1151372.9579783399
-    },
-    "main": {
-      "auth_error": 8,
-      "cost_usd": 0,
-      "events": 1715,
-      "fallback": 33,
-      "rate_limit": 9,
-      "timeout": 34,
-      "total_tokens": 1011995.1148378677
+      "timeout": 0,
+      "total_tokens": 0
     },
     "mimo": {
-      "auth_error": 3,
+      "auth_error": 0,
       "cost_usd": 0,
-      "events": 355,
-      "fallback": 3,
-      "rate_limit": 1,
-      "timeout": 8,
-      "total_tokens": 4038977.104466942
+      "events": 8,
+      "fallback": 0,
+      "rate_limit": 0,
+      "timeout": 0,
+      "total_tokens": 0
     },
     "phil": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 325,
+      "events": 1,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 1,
-      "total_tokens": 1760566.6355501998
+      "timeout": 0,
+      "total_tokens": 0
     },
     "sonny": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 307,
+      "events": 1,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 1,
-      "total_tokens": 1347613.5140660598
+      "timeout": 0,
+      "total_tokens": 0
     },
     "stephen": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 250,
+      "events": 1,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 1,
-      "total_tokens": 698528.4228248
+      "timeout": 0,
+      "total_tokens": 0
     },
     "unknown": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 115,
+      "events": 12,
       "fallback": 0,
       "rate_limit": 0,
-      "timeout": 2,
+      "timeout": 0,
       "total_tokens": 0
     }
   },
   "by_execution_type": {
     "cron": {
-      "auth_error": 7,
-      "cost_usd": 0,
-      "events": 179,
-      "fallback": 7,
-      "rate_limit": 7,
-      "timeout": 7,
-      "total_tokens": 706875.60810876
-    },
-    "heartbeat": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 388,
+      "events": 51,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
       "total_tokens": 0
-    },
-    "manual_or_unknown": {
-      "auth_error": 4,
-      "cost_usd": 0,
-      "events": 2582,
-      "fallback": 29,
-      "rate_limit": 3,
-      "timeout": 42,
-      "total_tokens": 3342879.765793579
-    },
-    "subagent": {
-      "auth_error": 0,
-      "cost_usd": 0,
-      "events": 181,
-      "fallback": 0,
-      "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 5959298.375821869
     }
   },
   "by_model": {
     "(runtime-default)": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 2,
+      "events": 20,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
       "total_tokens": 0
-    },
-    "gpt-5.2": {
-      "auth_error": 0,
-      "cost_usd": 0,
-      "events": 125,
-      "fallback": 0,
-      "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 0
-    },
-    "gpt-5.4": {
-      "auth_error": 4,
-      "cost_usd": 0,
-      "events": 136,
-      "fallback": 4,
-      "rate_limit": 4,
-      "timeout": 1,
-      "total_tokens": 0
-    },
-    "gpt-5.4-mini": {
-      "auth_error": 0,
-      "cost_usd": 0,
-      "events": 671,
-      "fallback": 0,
-      "rate_limit": 0,
-      "timeout": 4,
-      "total_tokens": 293216.3511552
-    },
-    "gpt-5.5": {
-      "auth_error": 3,
-      "cost_usd": 0,
-      "events": 1009,
-      "fallback": 10,
-      "rate_limit": 3,
-      "timeout": 21,
-      "total_tokens": 7464290.870022919
     },
     "gpt-mini": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 24,
+      "events": 9,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
       "total_tokens": 0
     },
-    "minimax/minimax-m2.5": {
-      "auth_error": 0,
-      "cost_usd": 0,
-      "events": 68,
-      "fallback": 0,
-      "rate_limit": 0,
-      "timeout": 0,
-      "total_tokens": 1862393.03294085
-    },
-    "minimax/minimax-m2.5:free": {
-      "auth_error": 1,
-      "cost_usd": 0,
-      "events": 782,
-      "fallback": 9,
-      "rate_limit": 0,
-      "timeout": 11,
-      "total_tokens": 363868.0853472394
-    },
     "openai-codex/gpt-5.4-mini": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 92,
+      "events": 16,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
@@ -246,20 +106,11 @@
     "openai-codex/gpt-5.5": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 10,
+      "events": 4,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
       "total_tokens": 0
-    },
-    "openrouter/auto": {
-      "auth_error": 0,
-      "cost_usd": 0,
-      "events": 398,
-      "fallback": 9,
-      "rate_limit": 0,
-      "timeout": 5,
-      "total_tokens": 25285.410258000054
     },
     "openrouter/minimax/minimax-m2.5": {
       "auth_error": 0,
@@ -269,418 +120,281 @@
       "rate_limit": 0,
       "timeout": 0,
       "total_tokens": 0
-    },
-    "unknown": {
-      "auth_error": 3,
-      "cost_usd": 0,
-      "events": 11,
-      "fallback": 4,
-      "rate_limit": 3,
-      "timeout": 7,
-      "total_tokens": 0
     }
   },
   "cron": {
     "attention": [
       {
-        "agent": "mimo",
-        "job": "Verificar ingressos de teatro da lista da Gi",
-        "kind": "large_model_cron",
-        "model": "openai-codex/gpt-5.5",
-        "severity": "warn"
-      },
-      {
-        "agent": "mimo",
-        "job": "Mimo — pesquisa semanal de experiência para casal em SP",
-        "kind": "large_model_cron",
-        "model": "openai-codex/gpt-5.5",
-        "severity": "warn"
-      },
-      {
-        "agent": "mimo",
-        "job": "Mimo — revisar protocolo de personalidade 60 dias",
-        "kind": "large_model_cron",
-        "model": "openai-codex/gpt-5.5",
-        "severity": "warn"
-      },
-      {
-        "agent": "mimo",
-        "job": "Avisar Danilo sobre cinema pet friendly no Morumbi Town",
-        "kind": "large_model_cron",
-        "model": "openai-codex/gpt-5.5",
-        "severity": "warn"
-      },
-      {
-        "agent": "mimo",
-        "job": "Mimo — protocolo de personalidade diário — Danilo",
-        "kind": "large_model_cron",
-        "model": "openai-codex/gpt-5.5",
-        "severity": "warn"
-      },
-      {
-        "agent": "mimo",
-        "job": "Mimo — protocolo de personalidade diário — Gi",
-        "kind": "large_model_cron",
-        "model": "openai-codex/gpt-5.5",
-        "severity": "warn"
-      },
-      {
-        "agent": "mimo",
-        "job": "Mimo — revisão de protocolos e tarefas rotineiras",
+        "agent": "main",
+        "job": "Lio Agent Team — start semanal operacional",
         "kind": "large_model_cron",
         "model": "openai-codex/gpt-5.5",
         "severity": "warn"
       }
     ],
     "enabled_by_agent": {
-      "main": 5,
+      "main": 27,
       "mimo": 7,
       "phil": 1,
       "sonny": 1,
       "stephen": 1,
-      "unknown": 32
+      "unknown": 11
     },
     "enabled_by_model": {
-      "gpt-mini": 19,
+      "(runtime-default)": 18,
+      "gpt-mini": 8,
       "openai-codex/gpt-5.4-mini": 16,
-      "openai-codex/gpt-5.5": 10,
+      "openai-codex/gpt-5.5": 4,
       "openrouter/minimax/minimax-m2.5": 2
     },
-    "enabled_jobs": 47,
-    "total_jobs": 130
+    "enabled_jobs": 48,
+    "total_jobs": 51
   },
-  "errors": {
-    "auth": 3,
-    "fallback": 24,
-    "rate_limit": 10,
-    "timeout": 47
-  },
-  "files": {
-    "sample_sources": [
-      {
-        "bytes": 437373,
-        "path": "agents/main/sessions/7d397d1e-7054-4308-bc94-2841e27d1629.checkpoint.194058f8-e4d6-4d74-9987-3b9c4377c7d9.jsonl"
-      },
-      {
-        "bytes": 65005,
-        "path": "agents/main/sessions/9c7f9954-66c9-4f1a-bb76-885c36263c30.jsonl"
-      },
-      {
-        "bytes": 174603,
-        "path": "agents/main/sessions/b99462d5-cb6b-4afa-9f29-3d0b18a3ffd7.trajectory.jsonl"
-      },
-      {
-        "bytes": 2861,
-        "path": "agents/main/sessions/4e7bad3e-d1ba-4542-97e4-c45d7d523fc1.jsonl"
-      },
-      {
-        "bytes": 1404322,
-        "path": "agents/main/sessions/7d397d1e-7054-4308-bc94-2841e27d1629.checkpoint.f51b74c5-f0cf-4879-a770-b64eaabf42b1.jsonl"
-      },
-      {
-        "bytes": 1728119,
-        "path": "agents/main/sessions/57b96c90-dd17-47b2-8f3b-e2e9e9ebac3a.checkpoint.db78fc43-5d30-40b7-ac0d-8e1fe050ce94.jsonl"
-      },
-      {
-        "bytes": 269906,
-        "path": "agents/main/sessions/57b96c90-dd17-47b2-8f3b-e2e9e9ebac3a.checkpoint.7842204c-3f1d-4ced-9246-49612ff762bf.jsonl"
-      },
-      {
-        "bytes": 225585,
-        "path": "agents/main/sessions/4892ca2f-df60-415d-8145-62620483c637.checkpoint.0b37df82-26b8-4d79-9c2d-193858540921.jsonl"
-      },
-      {
-        "bytes": 2416,
-        "path": "agents/main/sessions/56299b2b-2b40-4f53-8654-65c142aecc9d.jsonl"
-      },
-      {
-        "bytes": 735629,
-        "path": "agents/main/sessions/68ef9ab5-5ce4-4eff-a4af-ae9dca3d3e6f.checkpoint.d5dbb18d-fd29-4827-ac78-bd3aee34203f.jsonl"
-      },
-      {
-        "bytes": 2294588,
-        "path": "agents/main/sessions/57b96c90-dd17-47b2-8f3b-e2e9e9ebac3a.checkpoint.3222f11b-6a73-4a97-87ba-ac7a931649cd.jsonl"
-      },
-      {
-        "bytes": 1292680,
-        "path": "agents/main/sessions/2c453602-e08d-4cb9-bd1f-3d7961cdb0e4.checkpoint.6d3f83b8-779a-4e21-911c-485e17713188.jsonl"
-      },
-      {
-        "bytes": 3987918,
-        "path": "agents/main/sessions/88aff9b1-39e2-4b0d-8b1b-20213af41351.checkpoint.15201412-64af-434f-af67-31e0a03dbadf.jsonl"
-      },
-      {
-        "bytes": 117038,
-        "path": "agents/main/sessions/e6e6aab7-831c-4699-9bf7-2a54d4674612.checkpoint.32c3e254-19ad-4250-82a8-e68ade821d11.jsonl"
-      },
-      {
-        "bytes": 36046,
-        "path": "agents/main/sessions/32265a07-30cc-4b49-a643-d7134cd8e31e.jsonl"
-      },
-      {
-        "bytes": 130608,
-        "path": "agents/main/sessions/4e7bad3e-d1ba-4542-97e4-c45d7d523fc1.trajectory.jsonl"
-      },
-      {
-        "bytes": 3998,
-        "path": "agents/main/sessions/56a7542b-6874-439c-a229-1dfa47ae3944.jsonl"
-      },
-      {
-        "bytes": 1379400,
-        "path": "agents/main/sessions/2c453602-e08d-4cb9-bd1f-3d7961cdb0e4.checkpoint.b0684d09-9c53-41a5-a04d-75e9e332cfca.jsonl"
-      },
-      {
-        "bytes": 172565,
-        "path": "agents/main/sessions/32265a07-30cc-4b49-a643-d7134cd8e31e.trajectory.jsonl"
-      },
-      {
-        "bytes": 5161442,
-        "path": "agents/main/sessions/9c7f9954-66c9-4f1a-bb76-885c36263c30.trajectory.jsonl"
-      },
-      {
-        "bytes": 279297,
-        "path": "agents/main/sessions/2a866338-e529-4458-94e1-cd57979d72dc.trajectory.jsonl"
-      },
-      {
-        "bytes": 2327671,
-        "path": "agents/main/sessions/68ef9ab5-5ce4-4eff-a4af-ae9dca3d3e6f.checkpoint.7f388672-717a-46fe-b0b8-b3ef9172138b.jsonl"
-      },
-      {
-        "bytes": 126149,
-        "path": "agents/main/sessions/56a7542b-6874-439c-a229-1dfa47ae3944.trajectory.jsonl"
-      },
-      {
-        "bytes": 699622,
-        "path": "agents/main/sessions/57b96c90-dd17-47b2-8f3b-e2e9e9ebac3a.checkpoint.804f6e03-5880-4893-94ef-35488832f733.jsonl"
-      },
-      {
-        "bytes": 737402,
-        "path": "agents/main/sessions/c4785e92-c28d-4e30-bc93-c0c472a5baf7.checkpoint.76a159ac-7772-4b42-b0ef-f2b1814ce088.jsonl"
-      },
-      {
-        "bytes": 863036,
-        "path": "agents/main/sessions/88aff9b1-39e2-4b0d-8b1b-20213af41351.checkpoint.a52183d3-f56c-42dc-b1d8-3b25f074e933.jsonl"
-      },
-      {
-        "bytes": 1343584,
-        "path": "agents/main/sessions/4892ca2f-df60-415d-8145-62620483c637.checkpoint.8811b927-7730-4c10-9a38-25c628d2e0c9.jsonl"
-      },
-      {
-        "bytes": 148011,
-        "path": "agents/main/sessions/56299b2b-2b40-4f53-8654-65c142aecc9d.trajectory.jsonl"
-      },
-      {
-        "bytes": 4523561,
-        "path": "agents/main/sessions/88aff9b1-39e2-4b0d-8b1b-20213af41351.jsonl"
-      },
-      {
-        "bytes": 9444,
-        "path": "agents/main/sessions/2a866338-e529-4458-94e1-cd57979d72dc.jsonl"
-      },
-      {
-        "bytes": 391034,
-        "path": "agents/main/sessions/c4785e92-c28d-4e30-bc93-c0c472a5baf7.checkpoint.8b7eaeea-3c41-43f1-bfe9-49efb18042a0.jsonl"
-      },
-      {
-        "bytes": 1594943,
-        "path": "agents/main/sessions/7d397d1e-7054-4308-bc94-2841e27d1629.checkpoint.3c8d6bd6-c557-4541-8a8e-70a3ad64bc8d.jsonl"
-      },
-      {
-        "bytes": 955336,
-        "path": "agents/main/sessions/e6e6aab7-831c-4699-9bf7-2a54d4674612.checkpoint.84ab5a4c-960a-401a-ae60-2ce732d5720b.jsonl"
-      },
-      {
-        "bytes": 232162,
-        "path": "agents/main/sessions/b99462d5-cb6b-4afa-9f29-3d0b18a3ffd7.jsonl"
-      },
-      {
-        "bytes": 1459580,
-        "path": "agents/main/sessions/57b96c90-dd17-47b2-8f3b-e2e9e9ebac3a.checkpoint.d189e43b-3379-429b-ba5e-cd7121fbf6e2.jsonl"
-      },
-      {
-        "bytes": 1774919,
-        "path": "agents/main/sessions/68ef9ab5-5ce4-4eff-a4af-ae9dca3d3e6f.checkpoint.e38b35c9-8be6-483c-8362-6addb896db77.jsonl"
-      },
-      {
-        "bytes": 241893,
-        "path": "agents/main/sessions/73541b1d-2ec8-4219-b4a5-ccad70838dc1.checkpoint.4784cabf-2061-4d13-9c48-44e9a2843c00.jsonl"
-      },
-      {
-        "bytes": 1441296,
-        "path": "agents/main/sessions/88aff9b1-39e2-4b0d-8b1b-20213af41351.checkpoint.540672d8-b14a-4171-8491-1d30939d16fc.jsonl"
-      },
-      {
-        "bytes": 1072021,
-        "path": "agents/main/sessions/4892ca2f-df60-415d-8145-62620483c637.checkpoint.813da0fb-1d33-4dc4-97a2-09736901522f.jsonl"
-      },
-      {
-        "bytes": 501445,
-        "path": "agents/main/sessions/88aff9b1-39e2-4b0d-8b1b-20213af41351.checkpoint.54ce20ba-e079-4d8a-adaf-a5f3792d5243.jsonl"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/7a619dc2-d746-4887-a8df-64bfdf993ee5.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/1836a23d-28a0-4baa-a896-afd0e3adab20.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/0fc936a5-846d-4b1e-89ef-01fa342a8d14.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/8496bc12-13d7-4a41-af3e-a31a224dd36a.trajectory-path.json"
-      },
-      {
-        "bytes": 252,
-        "path": "agents/main/sessions/049d01bc-f98e-458c-b3cf-25ec91421b69-topic-2.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/d9a1b53f-389a-460d-a908-e93c72e2cd4a.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/75f55b6f-e74d-4068-bc31-9d93c90ad486.trajectory-path.json"
-      },
-      {
-        "bytes": 252,
-        "path": "agents/main/sessions/e6c24ab9-d452-4b15-8fad-cf26578abaf8-topic-2.trajectory-path.json"
-      },
-      {
-        "bytes": 252,
-        "path": "agents/main/sessions/17161bd8-6385-40b4-b87f-9afeb3817f09-topic-2.trajectory-path.json"
-      },
-      {
-        "bytes": 252,
-        "path": "agents/main/sessions/65465faf-f877-40c8-ade8-34daf37f4675-topic-2.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/0b009cb3-eae9-47ad-af50-b764e6099d93.trajectory-path.json"
-      },
-      {
-        "bytes": 252,
-        "path": "agents/main/sessions/24f1a9c4-2b03-4214-990d-c5be872b0cbe-topic-2.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/785f5d43-e6d8-4c99-84c1-287d1b751a9f.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/eb5ec272-5aa1-4fee-afbd-d08884f66127.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/98828ce2-72e6-4ea4-9a9c-23759fa97821.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/4f5b48e2-39da-4c68-8bfc-61e5b8d4286a.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/4a680dce-6e9b-44ac-8216-234893b505c5.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/9532fec2-9681-4ad4-9854-34c18dd9ff15.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/8a0c85f6-ccd7-42b1-810f-5af2f3d80e65.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/45391d4c-1e44-4167-9e60-5b1a095523bc.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/1b957129-0d78-468f-adff-fe12771b45cc.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/24a060bc-a0ed-4513-8c5c-34f1e5cbf86a.trajectory-path.json"
-      },
-      {
-        "bytes": 252,
-        "path": "agents/main/sessions/313c9853-3590-4b57-9e6f-ee196978f957-topic-2.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/3567fa1d-41dc-4dbb-bc47-05a1d64cd778.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/efeb7bcb-cd44-439a-9f9f-6972f2741adb.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/ffb655df-4d6d-43d6-9a2c-ab33164660a7.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/62d80d90-b8b7-4ec2-9537-eb55d4e2790f.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/7d7aed08-07c9-472b-8749-d0616f50ab77.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/d5449ae5-a29a-431e-a3c4-c237bbc303bf.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/80597b92-8a58-41de-bc1e-f8c7b91e9271.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/fba46f5a-5e8a-4024-a4a2-71e00ec22177.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/dd86559b-8c4d-4e97-a992-c319ef8d4232.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/919304bb-3722-4e77-88a3-592b90678324.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/baff7e42-b628-4455-b76d-1533c1dbfb9b.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/895967ba-4108-4f2a-a3c6-0cfe33d68cb1.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/582a15a8-0de3-487d-87b3-3b6e258531fd.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/7b11a39a-fa14-4099-8350-afd5e6ae0f09.trajectory-path.json"
-      },
-      {
-        "bytes": 252,
-        "path": "agents/main/sessions/0e03b797-3115-457d-a63d-6b5c395559ad-topic-2.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/13cbbe43-24b5-4ae3-8bac-62bc5b1cdd24.trajectory-path.json"
-      },
-      {
-        "bytes": 244,
-        "path": "agents/main/sessions/4ac52b0f-7c63-407a-8c76-f3ccbfe64517.trajectory-path.json"
+  "errors": {},
+  "generated_at": "2026-05-12T23:01:58+00:00",
+  "history": {
+    "daily": [
+      {
+        "date": "2026-04-27",
+        "events": 2,
+        "fallback": 1.0,
+        "timeout": 1.0
+      },
+      {
+        "auth_error": 10.0,
+        "cache_read_tokens": 46942231.937024,
+        "date": "2026-04-29",
+        "events": 1077,
+        "fallback": 15.0,
+        "input_tokens": 3466605.79549,
+        "output_tokens": 232603.03023,
+        "rate_limit": 10.0,
+        "timeout": 20.0,
+        "total_tokens": 132092.762744
+      },
+      {
+        "auth_error": 8.0,
+        "cache_read_tokens": 42327568.852403,
+        "date": "2026-04-30",
+        "events": 1006,
+        "fallback": 56.0,
+        "input_tokens": 5023723.313559,
+        "output_tokens": 256649.743402,
+        "rate_limit": 56.0,
+        "timeout": 68.0,
+        "total_tokens": 10198489.909364
+      },
+      {
+        "auth_error": 2.0,
+        "cache_read_tokens": 19575302.004915,
+        "date": "2026-05-01",
+        "events": 1312,
+        "fallback": 142.0,
+        "input_tokens": 4524773.67115,
+        "output_tokens": 253775.975413,
+        "rate_limit": 126.0,
+        "timeout": 137.0,
+        "total_tokens": 7850379.651479
+      },
+      {
+        "auth_error": 4.0,
+        "cache_read_tokens": 20303363.620685,
+        "date": "2026-05-02",
+        "events": 1702,
+        "fallback": 208.0,
+        "input_tokens": 5784646.827738,
+        "output_tokens": 326517.006948,
+        "rate_limit": 186.0,
+        "timeout": 191.0,
+        "total_tokens": 13022227.455371
+      },
+      {
+        "auth_error": 2.0,
+        "cache_read_tokens": 43764237.880627,
+        "date": "2026-05-03",
+        "events": 2086,
+        "fallback": 234.0,
+        "input_tokens": 9280288.911402,
+        "output_tokens": 501556.486684,
+        "rate_limit": 204.0,
+        "timeout": 202.0,
+        "total_tokens": 15874962.278714
+      },
+      {
+        "auth_error": 22.0,
+        "cache_read_tokens": 101759017.506113,
+        "date": "2026-05-04",
+        "events": 4440,
+        "fallback": 475.0,
+        "input_tokens": 19285096.190032,
+        "output_tokens": 991377.059435,
+        "rate_limit": 435.0,
+        "timeout": 466.0,
+        "total_tokens": 22511136.755579
+      },
+      {
+        "auth_error": 61.0,
+        "cache_read_tokens": 94709279.353537,
+        "date": "2026-05-05",
+        "events": 4843,
+        "fallback": 488.0,
+        "input_tokens": 24034414.375354,
+        "output_tokens": 795357.114527,
+        "rate_limit": 472.0,
+        "timeout": 585.0,
+        "total_tokens": 37194516.843417
+      },
+      {
+        "cache_read_tokens": 36742661.799911,
+        "date": "2026-05-06",
+        "events": 4518,
+        "fallback": 556.0,
+        "input_tokens": 18883384.56356,
+        "output_tokens": 640714.527251,
+        "rate_limit": 510.0,
+        "timeout": 542.0,
+        "total_tokens": 30065910.890721
+      },
+      {
+        "auth_error": 2.0,
+        "cache_read_tokens": 22344707.53481,
+        "date": "2026-05-07",
+        "events": 4611,
+        "fallback": 519.0,
+        "input_tokens": 11583589.704146,
+        "output_tokens": 398181.126228,
+        "rate_limit": 650.0,
+        "timeout": 520.0,
+        "total_tokens": 18558770.365184
+      },
+      {
+        "auth_error": 172.0,
+        "cache_read_tokens": 9210881.356006,
+        "date": "2026-05-08",
+        "events": 5191,
+        "fallback": 503.0,
+        "input_tokens": 2457614.807522,
+        "output_tokens": 124334.652063,
+        "rate_limit": 845.0,
+        "timeout": 531.0,
+        "total_tokens": 6585458.815592
+      },
+      {
+        "auth_error": 986.0,
+        "date": "2026-05-09",
+        "events": 5122,
+        "fallback": 504.0,
+        "rate_limit": 498.0,
+        "timeout": 493.0
+      },
+      {
+        "auth_error": 991.0,
+        "date": "2026-05-10",
+        "events": 5140,
+        "fallback": 507.0,
+        "input_tokens": 61400.0,
+        "output_tokens": 392.0,
+        "rate_limit": 508.0,
+        "timeout": 496.0,
+        "total_tokens": 61400.0
+      },
+      {
+        "auth_error": 427.0,
+        "cache_read_tokens": 187540167.767343,
+        "date": "2026-05-11",
+        "events": 5853,
+        "fallback": 403.0,
+        "input_tokens": 25134754.054931,
+        "output_tokens": 1138496.304003,
+        "rate_limit": 317.0,
+        "timeout": 536.0,
+        "total_tokens": 13596843.670276
+      },
+      {
+        "auth_error": 2.0,
+        "cache_read_tokens": 24117222.039241,
+        "date": "2026-05-12",
+        "events": 446,
+        "fallback": 2.0,
+        "input_tokens": 3841179.018737,
+        "output_tokens": 119865.553429,
+        "timeout": 20.0,
+        "total_tokens": 1178791.611407
       }
     ],
-    "scanned_files": 6829
+    "last_30d": {
+      "auth_error": 2689.0,
+      "cache_read_tokens": 649336641.652614,
+      "events": 47349,
+      "fallback": 4613.0,
+      "input_tokens": 133361471.233622,
+      "output_tokens": 5779820.579614,
+      "rate_limit": 4817.0,
+      "timeout": 4808.0,
+      "total_tokens": 176830981.009848
+    },
+    "last_7d": {
+      "auth_error": 2580.0,
+      "cache_read_tokens": 279955640.497311,
+      "events": 30881,
+      "fallback": 2994.0,
+      "input_tokens": 61961922.148895,
+      "output_tokens": 2421984.162974,
+      "rate_limit": 3328.0,
+      "timeout": 3138.0,
+      "total_tokens": 70047175.353179
+    },
+    "metric": "total_tokens",
+    "prior_7d": {
+      "auth_error": 109.0,
+      "cache_read_tokens": 369381001.155304,
+      "events": 16466,
+      "fallback": 1618.0,
+      "input_tokens": 71399549.084726,
+      "output_tokens": 3357836.416639,
+      "rate_limit": 1489.0,
+      "timeout": 1669.0,
+      "total_tokens": 106783805.656668
+    },
+    "weekly": [
+      {
+        "auth_error": 24.0,
+        "cache_read_tokens": 129148466.415029,
+        "events": 5099,
+        "fallback": 422.0,
+        "input_tokens": 18799749.607937,
+        "output_tokens": 1069545.755993,
+        "rate_limit": 378.0,
+        "timeout": 417.0,
+        "total_tokens": 31203189.778958,
+        "week_start": "2026-04-26"
+      },
+      {
+        "auth_error": 1245.0,
+        "cache_read_tokens": 308530785.430991,
+        "events": 30811,
+        "fallback": 3279.0,
+        "input_tokens": 85524388.552016,
+        "output_tokens": 3451520.966188,
+        "rate_limit": 3614.0,
+        "timeout": 3339.0,
+        "total_tokens": 130790755.949206,
+        "week_start": "2026-05-03"
+      },
+      {
+        "auth_error": 1420.0,
+        "cache_read_tokens": 211657389.806584,
+        "events": 11439,
+        "fallback": 912.0,
+        "input_tokens": 29037333.073667,
+        "output_tokens": 1258753.857432,
+        "rate_limit": 825.0,
+        "timeout": 1052.0,
+        "total_tokens": 14837035.281683,
+        "week_start": "2026-05-10"
+      }
+    ]
   },
-  "generated_at": "2026-05-11T23:03:19+00:00",
   "limits": {
     "note": "OpenAI Codex OAuth normalmente mostra quota/tokens, não custo em dólar; custo só aparece se o runtime registrar cost."
   },
@@ -691,17 +405,18 @@
     "storePrompts": false,
     "storeSecrets": false
   },
+  "privacy_note": "Dados agregados e sanitizados: sem prompts, mensagens, chat names, paths sensíveis ou secrets.",
   "totals": {
-    "auth_error": 11,
-    "cache_read_tokens": 126706306.11474702,
-    "cache_write_tokens": 0.0,
+    "auth_error": 0,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
     "cost_usd": 0,
-    "events": 3330,
-    "fallback": 36,
-    "input_tokens": 18119701.46407268,
-    "output_tokens": 815496.1709049525,
-    "rate_limit": 10,
-    "timeout": 49,
-    "total_tokens": 10009053.749724213
+    "events": 51,
+    "fallback": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "rate_limit": 0,
+    "timeout": 0,
+    "total_tokens": 0
   }
 }
