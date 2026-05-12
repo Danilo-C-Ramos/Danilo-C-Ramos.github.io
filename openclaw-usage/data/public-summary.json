@@ -157,11 +157,11 @@
     "main": {
       "auth_error": 4,
       "cost_usd": 0,
-      "events": 408,
+      "events": 419,
       "fallback": 2,
       "rate_limit": 0,
       "timeout": 16,
-      "total_tokens": 303876.73833578
+      "total_tokens": 303877.38177978
     },
     "mimo": {
       "auth_error": 0,
@@ -222,11 +222,11 @@
     "manual_or_unknown": {
       "auth_error": 4,
       "cost_usd": 0,
-      "events": 422,
+      "events": 433,
       "fallback": 2,
       "rate_limit": 0,
       "timeout": 19,
-      "total_tokens": 441717.76981067983
+      "total_tokens": 441718.4132546798
     },
     "subagent": {
       "auth_error": 0,
@@ -287,11 +287,11 @@
     "minimax/minimax-m2.5:free": {
       "auth_error": 4,
       "cost_usd": 0,
-      "events": 297,
+      "events": 308,
       "fallback": 1,
       "rate_limit": 0,
       "timeout": 13,
-      "total_tokens": 54591.706587930006
+      "total_tokens": 54592.35003193001
     },
     "openai-codex/gpt-5.4-mini": {
       "auth_error": 0,
@@ -488,7 +488,7 @@
     "fallback": 2,
     "timeout": 22
   },
-  "generated_at": "2026-05-12T23:14:58+00:00",
+  "generated_at": "2026-05-12T23:16:47+00:00",
   "history": {
     "daily": [
       {
@@ -649,37 +649,37 @@
       },
       {
         "auth_error": 4.0,
-        "cache_read_tokens": 28932327.58129,
+        "cache_read_tokens": 29904616.067434,
         "date": "2026-05-12",
-        "events": 504,
+        "events": 515,
         "fallback": 3.0,
-        "input_tokens": 4271536.6933,
-        "output_tokens": 132278.81202,
+        "input_tokens": 4283970.75547,
+        "output_tokens": 135449.90715,
         "timeout": 20.0,
-        "total_tokens": 1233366.08661
+        "total_tokens": 1233366.730054
       }
     ],
     "last_30d": {
       "auth_error": 2691.0,
-      "cache_read_tokens": 654151747.194663,
-      "events": 47409,
+      "cache_read_tokens": 655124035.680807,
+      "events": 47420,
       "fallback": 4614.0,
-      "input_tokens": 133791828.908185,
-      "output_tokens": 5792233.838204,
+      "input_tokens": 133804262.970355,
+      "output_tokens": 5795404.933334,
       "rate_limit": 4817.0,
       "timeout": 4808.0,
-      "total_tokens": 176885555.48505
+      "total_tokens": 176885556.128494
     },
     "last_7d": {
       "auth_error": 2582.0,
-      "cache_read_tokens": 284770746.039359,
-      "events": 30940,
+      "cache_read_tokens": 285743034.525503,
+      "events": 30951,
       "fallback": 2995.0,
-      "input_tokens": 62392279.823459,
-      "output_tokens": 2434397.421565,
+      "input_tokens": 62404713.885629,
+      "output_tokens": 2437568.516695,
       "rate_limit": 3328.0,
       "timeout": 3138.0,
-      "total_tokens": 70101749.828382
+      "total_tokens": 70101750.471826
     },
     "metric": "total_tokens",
     "prior_7d": {
@@ -720,14 +720,14 @@
       },
       {
         "auth_error": 1422.0,
-        "cache_read_tokens": 216472495.348633,
-        "events": 11498,
+        "cache_read_tokens": 217444783.834777,
+        "events": 11509,
         "fallback": 913.0,
-        "input_tokens": 29467690.748231,
-        "output_tokens": 1271167.116023,
+        "input_tokens": 29480124.810401,
+        "output_tokens": 1274338.211153,
         "rate_limit": 825.0,
         "timeout": 1052.0,
-        "total_tokens": 14891609.756885,
+        "total_tokens": 14891610.400329,
         "week_start": "2026-05-10"
       }
     ]
@@ -743,17 +743,38 @@
     "storeSecrets": false
   },
   "privacy_note": "Dados agregados e sanitizados: sem prompts, mensagens, chat names, paths sensíveis ou secrets.",
+  "provider_accounts": {
+    "codex": {
+      "note": "Sem API oficial local confirmada para a quota exibida no site/app do Codex; o dashboard usa tokens/logs locais do OpenClaw/Codex quando disponíveis.",
+      "status": "local_only"
+    },
+    "openrouter": {
+      "limit_remaining_usd": 9.50804525,
+      "limit_reset": "weekly",
+      "limit_usd": 10,
+      "rate_limit": {
+        "interval": "10s",
+        "note": "This field is deprecated and safe to ignore.",
+        "requests": -1
+      },
+      "status": "ok",
+      "usage_daily_usd": 0.04163529,
+      "usage_monthly_usd": 0.49195475,
+      "usage_usd": 0.49195475,
+      "usage_weekly_usd": 0.49195475
+    }
+  },
   "totals": {
     "auth_error": 4,
-    "cache_read_tokens": 23722375.780867837,
+    "cache_read_tokens": 24694664.26701184,
     "cache_write_tokens": 0.0,
     "cost_usd": 0,
-    "events": 547,
+    "events": 558,
     "fallback": 2,
-    "input_tokens": 5308550.223228599,
-    "output_tokens": 169012.09319444993,
+    "input_tokens": 5320984.285398598,
+    "output_tokens": 172183.18832444996,
     "rate_limit": 0,
     "timeout": 22,
-    "total_tokens": 1797046.0972908898
+    "total_tokens": 1797046.7407348899
   }
 }
