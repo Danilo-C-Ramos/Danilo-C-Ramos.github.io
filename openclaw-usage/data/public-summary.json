@@ -8,7 +8,14 @@
       "severity": "warn"
     },
     {
-      "count": 12,
+      "agent": "main",
+      "job": "Kobe — check-in estudos de founder dia sim dia não",
+      "kind": "large_model_cron",
+      "model": "openai-codex/gpt-5.5",
+      "severity": "warn"
+    },
+    {
+      "count": 23,
       "kind": "timeout_volume_24h",
       "severity": "warn"
     }
@@ -26,47 +33,47 @@
     "main": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 364,
-      "fallback": 0,
+      "events": 654,
+      "fallback": 2,
       "rate_limit": 0,
-      "timeout": 6,
-      "total_tokens": 2126046.694103071
+      "timeout": 17,
+      "total_tokens": 2195906.142650921
     },
     "mimo": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 61,
+      "events": 60,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 1,
-      "total_tokens": 1816444.8651760004
+      "total_tokens": 1797591.8397480005
     },
     "phil": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 27,
+      "events": 16,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 2,
-      "total_tokens": 212265.2016364
+      "total_tokens": 51266.160438
     },
     "sonny": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 33,
+      "events": 42,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 1,
-      "total_tokens": 360446.3799711
+      "total_tokens": 505774.99542240007
     },
     "stephen": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 14,
+      "events": 68,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 1,
-      "total_tokens": 66988.22325200001
+      "total_tokens": 1009403.2119809999
     },
     "unknown": {
       "auth_error": 0,
@@ -82,20 +89,20 @@
     "cron": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 179,
+      "events": 212,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 1,
-      "total_tokens": 2555476.4012158206
+      "total_tokens": 3552056.991928221
     },
     "manual_or_unknown": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 312,
-      "fallback": 0,
+      "events": 620,
+      "fallback": 2,
       "rate_limit": 0,
-      "timeout": 11,
-      "total_tokens": 1777796.6041357508
+      "timeout": 22,
+      "total_tokens": 1758966.999525101
     },
     "subagent": {
       "auth_error": 0,
@@ -111,20 +118,20 @@
     "gpt-5.4-mini": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 93,
+      "events": 118,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
-      "total_tokens": 707887.2546975999
+      "total_tokens": 664717.2274689999
     },
     "gpt-5.5": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 183,
+      "events": 299,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 1,
-      "total_tokens": 2998379.8997814003
+      "total_tokens": 3949448.1853399016
     },
     "gpt-mini": {
       "auth_error": 0,
@@ -138,20 +145,20 @@
     "minimax/minimax-m2.5": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 120,
+      "events": 130,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 2,
-      "total_tokens": 869969.0786801002
+      "total_tokens": 939806.0880529502
     },
     "minimax/minimax-m2.5:free": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 67,
-      "fallback": 0,
+      "events": 256,
+      "fallback": 1,
       "rate_limit": 0,
-      "timeout": 4,
-      "total_tokens": 34809.20532147
+      "timeout": 15,
+      "total_tokens": 34824.923720470004
     },
     "openai-codex/gpt-5.4-mini": {
       "auth_error": 0,
@@ -165,7 +172,7 @@
     "openai-codex/gpt-5.5": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 6,
+      "events": 7,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 0,
@@ -184,7 +191,7 @@
       "auth_error": 0,
       "cost_usd": 0,
       "events": 6,
-      "fallback": 0,
+      "fallback": 1,
       "rate_limit": 0,
       "timeout": 5,
       "total_tokens": 0
@@ -198,10 +205,17 @@
         "kind": "large_model_cron",
         "model": "openai-codex/gpt-5.5",
         "severity": "warn"
+      },
+      {
+        "agent": "main",
+        "job": "Kobe — check-in estudos de founder dia sim dia não",
+        "kind": "large_model_cron",
+        "model": "openai-codex/gpt-5.5",
+        "severity": "warn"
       }
     ],
     "enabled_by_agent": {
-      "main": 25,
+      "main": 26,
       "mimo": 7,
       "phil": 1,
       "sonny": 1,
@@ -211,16 +225,17 @@
     "enabled_by_model": {
       "gpt-mini": 24,
       "openai-codex/gpt-5.4-mini": 16,
-      "openai-codex/gpt-5.5": 4,
+      "openai-codex/gpt-5.5": 5,
       "openrouter/minimax/minimax-m2.5": 2
     },
-    "enabled_jobs": 46,
-    "total_jobs": 49
+    "enabled_jobs": 47,
+    "total_jobs": 50
   },
   "errors": {
-    "timeout": 12
+    "fallback": 2,
+    "timeout": 23
   },
-  "generated_at": "2026-05-13T21:28:26+00:00",
+  "generated_at": "2026-05-13T23:28:26+00:00",
   "history": {
     "daily": [
       {
@@ -391,37 +406,37 @@
         "total_tokens": 3763956.388089
       },
       {
-        "cache_read_tokens": 72998098.281187,
+        "cache_read_tokens": 97143066.379926,
         "date": "2026-05-13",
-        "events": 400,
-        "fallback": 4.0,
-        "input_tokens": 15506488.974496,
-        "output_tokens": 240838.754518,
-        "timeout": 8.0,
-        "total_tokens": 7253312.010201
+        "events": 776,
+        "fallback": 6.0,
+        "input_tokens": 21307681.943496,
+        "output_tokens": 372962.966173,
+        "timeout": 23.0,
+        "total_tokens": 8523534.289596
       }
     ],
     "last_30d": {
       "auth_error": 2700.0,
-      "cache_read_tokens": 772484964.722218,
-      "events": 48359,
-      "fallback": 4622.0,
-      "input_tokens": 153709695.408084,
-      "output_tokens": 6189133.122432,
+      "cache_read_tokens": 796629932.820957,
+      "events": 48735,
+      "fallback": 4624.0,
+      "input_tokens": 159510888.377084,
+      "output_tokens": 6321257.334088,
       "rate_limit": 4817.0,
-      "timeout": 4833.0,
-      "total_tokens": 186669457.796731
+      "timeout": 4848.0,
+      "total_tokens": 187939680.076126
     },
     "last_7d": {
       "auth_error": 2591.0,
-      "cache_read_tokens": 366361301.767003,
-      "events": 27372,
-      "fallback": 2447.0,
-      "input_tokens": 63426761.759798,
-      "output_tokens": 2190582.178542,
+      "cache_read_tokens": 390506269.865742,
+      "events": 27748,
+      "fallback": 2449.0,
+      "input_tokens": 69227954.728798,
+      "output_tokens": 2322706.390197,
       "rate_limit": 2818.0,
-      "timeout": 2621.0,
-      "total_tokens": 49819741.249342
+      "timeout": 2636.0,
+      "total_tokens": 51089963.528737
     },
     "metric": "total_tokens",
     "prior_7d": {
@@ -462,14 +477,14 @@
       },
       {
         "auth_error": 1431.0,
-        "cache_read_tokens": 334805712.876188,
-        "events": 12448,
-        "fallback": 921.0,
-        "input_tokens": 49385557.248129,
-        "output_tokens": 1668066.400251,
+        "cache_read_tokens": 358950680.974928,
+        "events": 12824,
+        "fallback": 923.0,
+        "input_tokens": 55186750.217129,
+        "output_tokens": 1800190.611906,
         "rate_limit": 825.0,
-        "timeout": 1077.0,
-        "total_tokens": 24675512.068567,
+        "timeout": 1092.0,
+        "total_tokens": 25945734.347961,
         "week_start": "2026-05-10"
       }
     ]
@@ -491,7 +506,7 @@
       "status": "local_only"
     },
     "openrouter": {
-      "limit_remaining_usd": 9.46716883,
+      "limit_remaining_usd": 9.46249218,
       "limit_reset": "weekly",
       "limit_usd": 10,
       "rate_limit": {
@@ -500,23 +515,23 @@
         "requests": -1
       },
       "status": "ok",
-      "usage_daily_usd": 0.04087642,
-      "usage_monthly_usd": 0.53283117,
-      "usage_usd": 0.53283117,
-      "usage_weekly_usd": 0.53283117
+      "usage_daily_usd": 0.04555307,
+      "usage_monthly_usd": 0.53750782,
+      "usage_usd": 0.53750782,
+      "usage_weekly_usd": 0.53750782
     }
   },
   "totals": {
     "auth_error": 0,
-    "cache_read_tokens": 18349315.7359187,
+    "cache_read_tokens": 35428075.80494909,
     "cache_write_tokens": 0.0,
     "cost_usd": 0,
-    "events": 518,
-    "fallback": 0,
-    "input_tokens": 4820860.1748169,
-    "output_tokens": 113400.52774494998,
+    "events": 859,
+    "fallback": 2,
+    "input_tokens": 10315929.9262004,
+    "output_tokens": 234540.69343280004,
     "rate_limit": 0,
-    "timeout": 12,
-    "total_tokens": 4611045.438480571
+    "timeout": 23,
+    "total_tokens": 5588796.42458232
   }
 }
