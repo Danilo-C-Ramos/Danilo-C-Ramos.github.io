@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mapa de Estudos de Founder</title>
+  <style>
+    :root{color-scheme:dark;--bg:#070b14;--card:#101827;--card2:#151f33;--text:#e5e7eb;--muted:#94a3b8;--line:#253047;--accent:#f97316;--blue:#60a5fa;--green:#34d399;--purple:#c084fc;--warn:#fbbf24}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at top left,#18253f,#070b14 48%);color:var(--text)}
+    main{max-width:1180px;margin:0 auto;padding:28px 18px 64px}.hero{display:grid;grid-template-columns:1fr 280px;gap:16px;align-items:start;margin-bottom:18px}@media(max-width:780px){.hero{grid-template-columns:1fr}}
+    .kicker{color:var(--accent);font-weight:850;letter-spacing:.08em;text-transform:uppercase;font-size:12px}h1{font-size:clamp(32px,6vw,56px);line-height:1;margin:.25rem 0 .75rem}h2{margin:0 0 12px}h3{margin:0 0 8px}.muted{color:var(--muted)}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 14px 38px rgba(0,0,0,.24)}.section{margin-top:14px}.pill{display:inline-flex;gap:6px;align-items:center;border-radius:999px;padding:5px 10px;background:#24304a;color:#dbeafe;font-size:12px;font-weight:750}.focus{background:rgba(249,115,22,.17);color:#fed7aa;border:1px solid rgba(249,115,22,.35)}
+    .grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}@media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.grid{grid-template-columns:1fr}}
+    .track{cursor:pointer;transition:.15s transform,.15s border-color;min-height:176px}.track:hover{transform:translateY(-2px);border-color:rgba(249,115,22,.6)}.track.active{border-color:var(--accent);box-shadow:0 0 0 1px rgba(249,115,22,.55),0 14px 38px rgba(0,0,0,.24)}.track .num{font-size:12px;color:var(--muted);font-weight:800}.track h3{font-size:17px}.track p{font-size:13px;line-height:1.4;color:var(--muted)}
+    .map{display:grid;gap:10px;text-align:center}.maprow{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}@media(max-width:700px){.maprow{grid-template-columns:1fr}.arrow{display:none}}.node{border:1px solid var(--line);background:#0f172a;border-radius:16px;padding:12px}.node b{display:block}.node span{font-size:12px;color:var(--muted)}.wide{max-width:680px;margin:0 auto}.arrow{color:var(--muted);font-size:24px}
+    .detail{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:880px){.detail{grid-template-columns:1fr}}ul{margin:8px 0 0;padding-left:20px}li{margin:6px 0}.source{padding:9px 10px;background:#0f172a;border:1px solid var(--line);border-radius:12px;margin:7px 0}.cycle{display:flex;gap:8px;flex-wrap:wrap}.cycle span{border:1px solid rgba(52,211,153,.35);background:rgba(52,211,153,.09);color:#bbf7d0;border-radius:999px;padding:8px 10px;font-weight:750;font-size:13px}.rule{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:700px){.rule{grid-template-columns:1fr}}.rule .card{box-shadow:none}.small{font-size:13px;line-height:1.45}.footer{margin-top:20px;color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+<section id="login" style="min-height:100vh;display:grid;place-items:center;padding:20px">
+  <div class="card" style="max-width:440px;width:100%">
+    <div class="kicker">Kobe / Founder OS</div>
+    <h1>Mapa de Estudos</h1>
+    <p class="muted">Digite a senha para entrar.</p>
+    <input id="password" type="password" placeholder="Senha" autocomplete="current-password" style="width:100%;border:1px solid var(--line);background:#0f172a;color:var(--text);border-radius:12px;padding:13px 14px;font-size:16px" />
+    <button id="unlock" style="width:100%;margin-top:10px;border:0;background:var(--accent);color:#111827;border-radius:12px;padding:13px 14px;font-size:16px;font-weight:850;cursor:pointer">Entrar</button>
+    <p id="err" style="min-height:22px;color:#fb7185;font-size:14px"></p>
+  </div>
+</section>
+<main id="app" style="display:none">
+  <section class="hero">
+    <div>
+      <div class="kicker">Kobe / Founder OS</div>
+      <h1>Mapa de Estudos de Founder</h1>
+      <p class="muted">Um mapa vivo para escolher o próximo estudo, registrar insights e transformar teoria em decisões práticas para a Lio.</p>
+    </div>
+    <div class="card"><div class="kicker">Foco atual</div><h2 id="focus">PMF</h2><p id="decision" class="small muted"></p></div>
+  </section>
+
+  <section class="card section">
+    <h2>Sistema operacional de startup</h2>
+    <div class="map">
+      <div class="node wide"><b>AMBIÇÃO / CATEGORIA</b><span>BHAG, visão, posicionamento, narrativa</span></div>
+      <div class="arrow">↓</div>
+      <div class="maprow">
+        <div class="node"><b>Mercado</b><span>PMF</span></div>
+        <div class="node"><b>Produto</b><span>JTBD / design</span></div>
+        <div class="node"><b>Distribuição</b><span>vendas / growth</span></div>
+        <div class="node"><b>Modelo</b><span>pricing / unit economics</span></div>
+      </div>
+      <div class="arrow">↓</div>
+      <div class="node wide"><b>EXECUÇÃO / ORGANIZAÇÃO</b><span>cultura, hiring, gestão, foco, cadência</span></div>
+      <div class="arrow">↓</div>
+      <div class="node wide"><b>CAPITAL / JOGO LONGO</b><span>venture capital, estratégia, governança, psicologia</span></div>
+    </div>
+  </section>
+
+  <section class="section grid" id="tracks"></section>
+
+  <section class="section detail">
+    <div class="card">
+      <div id="status" class="pill focus">foco agora</div>
+      <h2 id="trackName" style="margin-top:10px">—</h2>
+      <p id="question" class="muted"></p>
+      <h3>Aplicação em Lio</h3>
+      <p id="lio" class="small"></p>
+    </div>
+    <div class="card">
+      <h2>Fontes primárias / boas bases</h2>
+      <div id="sources"></div>
+    </div>
+  </section>
+
+  <section class="section rule">
+    <div class="card"><h2>Onde registrar?</h2><p><b>Conceito geral, livro, autor, insight de founder</b> → Danilo Knowledge Vault / Kobe.</p><p><b>Aplicação direta à Lio</b> → vault/projeto da Lio, linkando para o conceito original.</p></div>
+    <div class="card"><h2>Primeiro ciclo recomendado</h2><div class="cycle" id="cycle"></div></div>
+  </section>
+
+  <p class="footer" id="updated"></p>
+</main>
+<script>
+const PASSWORD_HASH='7e2d71f9047cba9b494818784b3aeecbf6c9efabe1d442bea49dce7a57d4f13e';
+async function sha256(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function unlock(){const p=document.getElementById('password').value;if(await sha256(p)===PASSWORD_HASH){sessionStorage.setItem('founderStudyOk','1');document.getElementById('login').style.display='none';document.getElementById('app').style.display='block';load()}else document.getElementById('err').textContent='Senha incorreta.'}
+document.getElementById('unlock').onclick=unlock;document.getElementById('password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});
+let data, selected=0;
+function render(){
+  document.getElementById('focus').textContent=data.current_focus;
+  document.getElementById('decision').textContent=data.decision;
+  document.getElementById('updated').textContent='Atualizado em '+data.updated_at+' • fonte: ops/founder-study-map/public/data/study-map.json';
+  document.getElementById('cycle').innerHTML=data.first_cycle.map(x=>`<span>${x}</span>`).join('');
+  document.getElementById('tracks').innerHTML=data.tracks.map((t,i)=>`<article class="card track ${i===selected?'active':''}" onclick="selectTrack(${i})"><div class="num">${String(i+1).padStart(2,'0')}</div><h3>${t.name}</h3><span class="pill ${t.status==='foco agora'?'focus':''}">${t.status}</span><p>${t.question}</p></article>`).join('');
+  const t=data.tracks[selected];
+  document.getElementById('status').textContent=t.status;
+  document.getElementById('status').className='pill '+(t.status==='foco agora'?'focus':'');
+  document.getElementById('trackName').textContent=t.name;
+  document.getElementById('question').textContent=t.question;
+  document.getElementById('lio').textContent=t.lio;
+  document.getElementById('sources').innerHTML=t.sources.map(s=>`<div class="source">${s}</div>`).join('');
+}
+function selectTrack(i){selected=i;render();document.getElementById('trackName').scrollIntoView({behavior:'smooth',block:'center'})}
+function load(){if(data){render();return}fetch('data/study-map.json?'+Date.now()).then(r=>r.json()).then(j=>{data=j;render()})}
+if(sessionStorage.getItem('founderStudyOk')==='1'){document.getElementById('login').style.display='none';document.getElementById('app').style.display='block';load()}
+</script>
+</body>
+</html>
