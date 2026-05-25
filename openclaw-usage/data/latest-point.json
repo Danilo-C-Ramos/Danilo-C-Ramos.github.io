@@ -1,20 +1,20 @@
 {
   "errors": {
     "rate_limit": 2,
-    "timeout": 6
+    "timeout": 5
   },
   "totals": {
     "auth_error": 0,
-    "cache_read_tokens": 13281410.659713604,
+    "cache_read_tokens": 9356609.20457216,
     "cache_write_tokens": 0.0,
     "cost_usd": 0,
-    "events": 343,
+    "events": 342,
     "fallback": 2,
-    "input_tokens": 3012379.889461748,
-    "output_tokens": 85049.34093790002,
+    "input_tokens": 1976914.7775705506,
+    "output_tokens": 58817.82270939999,
     "rate_limit": 2,
-    "timeout": 8,
-    "total_tokens": 2969146.8901132517
+    "timeout": 7,
+    "total_tokens": 1595781.8048521099
   },
-  "ts": "2026-05-25T14:47:26+00:00"
+  "ts": "2026-05-25T16:47:24+00:00"
 }
