@@ -10,11 +10,11 @@
     "main": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 401,
+      "events": 416,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 2,
-      "total_tokens": 936991.4974580497
+      "total_tokens": 988507.5167180697
     },
     "mimo": {
       "auth_error": 0,
@@ -66,20 +66,20 @@
     "cron": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 128,
+      "events": 131,
       "fallback": 1,
       "rate_limit": 0,
       "timeout": 1,
-      "total_tokens": 1787053.1416046
+      "total_tokens": 1838568.1927645998
     },
     "manual_or_unknown": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 381,
+      "events": 393,
       "fallback": 1,
       "rate_limit": 0,
       "timeout": 4,
-      "total_tokens": 1033479.9272408498
+      "total_tokens": 1033480.8953408699
     },
     "subagent": {
       "auth_error": 0,
@@ -104,11 +104,11 @@
     "gpt-5.5": {
       "auth_error": 0,
       "cost_usd": 0,
-      "events": 390,
+      "events": 405,
       "fallback": 0,
       "rate_limit": 0,
       "timeout": 2,
-      "total_tokens": 2429011.988589251
+      "total_tokens": 2480528.007849271
     },
     "gpt-mini": {
       "auth_error": 0,
@@ -169,7 +169,7 @@
     "fallback": 2,
     "timeout": 5
   },
-  "generated_at": "2026-05-26T07:41:38+00:00",
+  "generated_at": "2026-05-26T09:41:38+00:00",
   "history": {
     "daily": [
       {
@@ -479,36 +479,36 @@
         "total_tokens": 4434737.582172
       },
       {
-        "cache_read_tokens": 10056657.646162,
+        "cache_read_tokens": 11771793.668189,
         "date": "2026-05-26",
-        "events": 104,
-        "input_tokens": 2945071.561678,
-        "output_tokens": 24877.477526,
+        "events": 125,
+        "input_tokens": 3368677.607714,
+        "output_tokens": 25562.485794,
         "timeout": 1.0,
-        "total_tokens": 302321.685366
+        "total_tokens": 362491.761698
       }
     ],
     "last_30d": {
       "auth_error": 2701.0,
-      "cache_read_tokens": 1279858819.451312,
-      "events": 53998,
+      "cache_read_tokens": 1281573955.47334,
+      "events": 54019,
       "fallback": 4673.0,
-      "input_tokens": 248482168.900785,
-      "output_tokens": 7863955.772114,
+      "input_tokens": 248905774.946822,
+      "output_tokens": 7864640.780382,
       "rate_limit": 4828.0,
       "timeout": 4979.0,
-      "total_tokens": 250949523.668209
+      "total_tokens": 251009693.744541
     },
     "last_7d": {
       "auth_error": 1.0,
-      "cache_read_tokens": 181773680.489617,
-      "events": 2136,
+      "cache_read_tokens": 183488816.511645,
+      "events": 2157,
       "fallback": 19.0,
-      "input_tokens": 28820678.392156,
-      "output_tokens": 581425.209217,
+      "input_tokens": 29244284.438192,
+      "output_tokens": 582110.217485,
       "rate_limit": 4.0,
       "timeout": 58.0,
-      "total_tokens": 23937746.09099
+      "total_tokens": 23997916.167322
     },
     "metric": "total_tokens",
     "prior_7d": {
@@ -571,14 +571,14 @@
         "week_start": "2026-05-17"
       },
       {
-        "cache_read_tokens": 70328230.366992,
-        "events": 936,
+        "cache_read_tokens": 72043366.38902,
+        "events": 957,
         "fallback": 4.0,
-        "input_tokens": 15210342.964285,
-        "output_tokens": 231040.700596,
+        "input_tokens": 15633949.010321,
+        "output_tokens": 231725.708864,
         "rate_limit": 2.0,
         "timeout": 20.0,
-        "total_tokens": 8182783.031873,
+        "total_tokens": 8242953.108205,
         "week_start": "2026-05-24"
       }
     ]
@@ -606,15 +606,15 @@
   },
   "totals": {
     "auth_error": 0,
-    "cache_read_tokens": 15874900.058406403,
+    "cache_read_tokens": 15940292.072241921,
     "cache_write_tokens": 0.0,
     "cost_usd": 0,
-    "events": 516,
+    "events": 531,
     "fallback": 2,
-    "input_tokens": 5659248.577610202,
-    "output_tokens": 99039.54870185003,
+    "input_tokens": 6064478.577706402,
+    "output_tokens": 99528.55403015002,
     "rate_limit": 0,
     "timeout": 5,
-    "total_tokens": 2873347.18471845
+    "total_tokens": 2924863.20397847
   }
 }
